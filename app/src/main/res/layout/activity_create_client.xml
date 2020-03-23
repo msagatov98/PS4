@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CreateClientActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_client"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/person"
+        android:layout_marginTop="20dp"
+        android:onClick="takeCameraPicture"
+        android:contentDescription="@string/img_description"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:hint="@string/hint_name"
+        android:id="@+id/input_name"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        style="@style/create_client_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_client" />
+
+    <EditText
+        android:hint="@string/hint_surname"
+        android:id="@+id/input_surname"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        style="@style/create_client_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_name" />
+
+    <EditText
+        android:hint="@string/hint_birth_date"
+        android:id="@+id/input_birth_date"
+        android:importantForAutofill="no"
+        android:onClick="setBirthDate"
+        android:inputType="text"
+        style="@style/create_client_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_surname" />
+
+    <EditText
+        android:hint="@string/hint_email"
+        android:id="@+id/input_email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        style="@style/create_client_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_birth_date" />
+
+    <EditText
+        android:inputType="text"
+        android:hint="@string/hint_instagram"
+        android:id="@+id/input_instagram"
+        android:importantForAutofill="no"
+        style="@style/create_client_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_email" />
+
+    <EditText
+        android:inputType="phone"
+        android:hint="@string/hint_phone"
+        android:id="@+id/input_phone"
+        android:importantForAutofill="no"
+        style="@style/create_client_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_instagram" />
+
+    <EditText
+        android:hint="@string/hint_whastsapp"
+        android:inputType="phone"
+        android:id="@+id/input_whatsapp"
+        android:importantForAutofill="no"
+        style="@style/create_client_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_phone" />
+
+    <Button
+        android:text="@string/create"
+        android:onClick="createClient"
+        android:id="@+id/btn_create"
+        android:textColor="@color/white"
+        style="@style/create_client_style"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_whatsapp"/>
+
+
+    <include layout="@layout/bottom_navigation_view"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

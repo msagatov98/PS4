@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "333506287885",
+    "firebase_url": "https://ps4-cafe.firebaseio.com",
+    "project_id": "ps4-cafe",
+    "storage_bucket": "ps4-cafe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333506287885:android:0883c958124161544b7844",
+        "android_client_info": {
+          "package_name": "com.example.ps4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333506287885-tp2i77bupdotsotbkgv8vrrgonrgis2g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ps4",
+            "certificate_hash": "f88beec2677088564f51d7b82959d58987cbd519"
+          }
+        },
+        {
+          "client_id": "333506287885-227kjno73u2o1hbn8rqh5do0pn8cisid.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvihiEEBu4hidIjrqu_u79LF4Y_sQ-g6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333506287885-227kjno73u2o1hbn8rqh5do0pn8cisid.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333506287885:android:abe180e2828c68b74b7844",
+        "android_client_info": {
+          "package_name": "com.example.ps4cafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333506287885-227kjno73u2o1hbn8rqh5do0pn8cisid.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvihiEEBu4hidIjrqu_u79LF4Y_sQ-g6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333506287885-227kjno73u2o1hbn8rqh5do0pn8cisid.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

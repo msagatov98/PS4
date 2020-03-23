@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp"
+    android:id="@+id/dialog_window">
+
+    <ImageView
+        android:layout_margin="15dp"
+        android:id="@+id/icon_client"
+        android:src="@drawable/person"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:scaleType="center"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_margin="15dp"
+        android:layout_width="200dp"
+        android:id="@+id/client_fullname"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon_client"/>
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_margin="15dp"
+        android:id="@+id/client_id"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/client_fullname"
+        app:layout_constraintStart_toEndOf="@id/icon_client"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="cancel"
+        android:id="@+id/btn_ok"
+        app:layout_constraintVertical_weight="1"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cancel"
+        app:layout_constraintTop_toBottomOf="@id/icon_client" />
+
+    <Button
+        android:layout_width="wrap_content"
+        app:layout_constraintVertical_weight="1"
+        android:id="@+id/btn_cancel"
+        android:layout_marginTop="15dp"
+        android:text="OK"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/btn_ok"
+        app:layout_constraintTop_toBottomOf="@id/icon_client"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

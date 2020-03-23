@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">PS4</string>
+
+    <string name="img_description">Description</string>
+
+    <string name="txt_or">or</string>
+    <string name="create">Create</string>
+    <string name="title_list">List</string>
+    <string name="hint_name">Name:</string>
+    <string name="hint_email">Email:</string>
+    <string name="btn_txt_qr">Scan QR</string>
+    <string name="hint_surname">Surname:</string>
+    <string name="title_find">Find Client</string>
+    <string name="hint_phone">Phone number:</string>
+    <string name="hint_whastsapp">WhatsApp:</string>
+    <string name="hint_instagram">Instagram:</string>
+    <string name="title_create">Create Client</string>
+    <string name="hint_birth_date">Birth date</string>
+    <string name="toast_image_intent_null">Null</string>
+    <string name="btn_txt_enter_code">Enter Code</string>
+    <string name="lbl_take_camera_picture">Camera</string>
+    <string name="lbl_choose_from_gallery">Gallery</string>
+    <string name="btn_scan_qr">Scan QR</string>
+    <string name="btn_enter_id">Enter ID</string>
+    <string name="edit_client">Edit Client</string>
+</resources>
